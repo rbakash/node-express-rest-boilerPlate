@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "nodemon server.js",
-    "build-prod": "NODE_ENV=production gulp build"
+    "build": "gulp build",
+    "build-prod": "NODE_ENV=production gulp build",
+    "watch": "gulp watch"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
