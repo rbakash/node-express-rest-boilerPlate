@@ -38,7 +38,7 @@ app.use(xss());
 
 // Prefix the routes with /api/v1/
 // app.use('/',todolistRouter );
-app.use('/api/v1',todolistRouter );
+app.use(todolistRouter );
 
 
 // catch 404 and forward to error handler
