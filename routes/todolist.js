@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var todoListHandler = require('../services/todoList');
+var url = require('url');
+
 
 /* POST Todolist Item */
 router.get('/add',function (req, res) {
@@ -10,10 +12,10 @@ router.get('/add',function (req, res) {
     todoListHandler.addItem(req, res);
 });
 router.get('*', function(req, res){
-    console.log(req.get('host'));
+    console.log('host: ',req.get('host'));
     console.log('\n');
     console.log(req.url);
-    console.log(req.get('X-Forwarded-Protocol'));
+    console.log('original URl : ',req.originalUrl);
     res.send('what???', 404);
   });
 module.exports = router;
