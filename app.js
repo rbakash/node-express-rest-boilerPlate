@@ -37,7 +37,8 @@ app.use(xss());
 // app.use(express.static(path.join(__dirname, 'public')));
 
 // Prefix the routes with /api/v1/
-app.use('/',todolistRouter );
+// app.use('/',todolistRouter );
+app.use(todolistRouter );
 
 
 // catch 404 and forward to error handler
