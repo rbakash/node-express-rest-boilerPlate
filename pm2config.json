@@ -1,6 +1,6 @@
 {
   "apps": [{
-    "script" : "./app/server/index.js",
+    "script" : "server.js",
     "env": {
       "NODE_ENV": "production",
       "PORT": "8080"
