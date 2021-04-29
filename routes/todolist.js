@@ -10,9 +10,10 @@ router.get('/add',function (req, res) {
     todoListHandler.addItem(req, res);
 });
 router.get('*', function(req, res){
-    console.log(req);
+    console.log(req.get('host'));
     console.log('\n');
     console.log(req.url);
+    console.log(req.get('X-Forwarded-Protocol'));
     res.send('what???', 404);
   });
 module.exports = router;
