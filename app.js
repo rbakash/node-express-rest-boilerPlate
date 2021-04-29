@@ -37,7 +37,7 @@ app.use(xss());
 // app.use(express.static(path.join(__dirname, 'public')));
 
 // Prefix the routes with /api/v1/
-app.use('/v1/',todolistRouter );
+app.use('/v1',todolistRouter );
 // app.use(todolistRouter );
 
 
