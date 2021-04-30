@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var todoListHandler = require('../services/todoList');
-var url = require('url');
-
 
 /* POST Todolist Item */
 router.get('/add',function (req, res) {
